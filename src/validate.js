@@ -40,7 +40,7 @@ angular.module('angularPayments')
 
       // valid if empty - let ng-required handle empty
       if(cvc == null || cvc.length == 0) return true;
-
+console.log("CVC: "+cvc);
       if (!/^\d+$/.test(cvc)) {
         return false;
       }
